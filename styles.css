@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #000;
+}
+
+header .logo h1 {
+  color: #ff3838;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header .cta .btn {
+  background-color: #ff3838;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  float: right;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 56, 56, 0.8)), url('cbum.jpeg') center/cover no-repeat;
+  height: 100vh;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  
+}
+
+.hero-text .btn {
+  background-color: #ff3838;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  left: 500px;
+  
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+  height:auto;
+  opacity: 60%;
+  
+}
+
+footer {
+  background-color: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+.font{
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+.trainer{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 35px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+/* Trainer section */
+.trainer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.trainer-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.trainer-item {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.trainer-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trainer-item img:hover {
+  transform: scale(1.05);
+}
+
+.trainer-item p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .trainer-gallery {
+    flex-direction: column;
+  }
+
+  .trainer-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Facilities Section */
+.facilities {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center the content horizontally */
+}
+
+.facilities h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-align: center;  /* Center the title text */
+}
+
+.dropdown-btn {
+  background-color: #ff3838;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #111;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;  /* Center text inside dropdown */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-btn:hover + .dropdown-content {
+  display: block;
+}
+
+/* Pricing Section */
+.pricing-table {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pricing-table h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: #111;
+  border: 2px solid #575757;
+  border-radius: 10px;
+  padding: 20px;
+  width: 22%;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  color: #ff3838;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.pricing-card .btn {
+  background-color: #ff3838;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.popular {
+  background-color: #1e1e1e;
+  border-color: #ff3838;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    width: 100%;
+  }
+}
+
+/* Gym Pictures Section */
+.gym-pictures {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.gym-pictures h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ff3838;
+}
+
+.gym-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.gym-gallery img {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gym-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gym-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gym-gallery::-webkit-scrollbar-thumb {
+  background-color: #ff3838;
+  border-radius: 5px;
+}
+
+.container2{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Protest Guerrilla", sans-serif;
+  margin-bottom: 50px
+}
+
+.price-text{
+  font-size: 36px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+.images{
+  margin-bottom: 35px;
+}
+
+.main{
+  text-align: center;
+  font-family: "Unlock", serif;
+}
+
+/* User Icon */
+.header .user-icon {
+  background: url('user.png') no-repeat center center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* User Dashboard */
+.user-dashboard {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #111;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.user-dashboard.show {
+  display: block;
+}
+
+.user-dashboard a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.user-dashboard a:hover {
+  background-color: #575757;
+}
+
+/* Adding space to header for user icon */
+header {
+  padding: 20px 0;
+  padding-right: 60px; /* Adjust this as needed */
+}
+
+.header .container {
+  position: relative;
+}
+
+/* Responsive adjustments for user icon */
+@media (max-width: 768px) {
+  .header .user-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-dashboard {
+    min-width: 150px;
+  }
+}
+

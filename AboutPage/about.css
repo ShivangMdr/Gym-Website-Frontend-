@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+h1, h2, h3 {
+  color: #ff3b3f;
+}
+
+.about-us, .mission, .our-story, .stats {
+  padding: 2rem 0;
+  border-bottom: 1px solid #222;
+}
+
+.about-us img, .mission img, .our-story img, .stats-grid img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content p {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.stat {
+  padding: 1rem;
+  background-color: #111;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #111;
+  border-top: 1px solid #222;
+}
+
+p{
+  font-size: 25px;
+}
+
+.class{
+  font-size: 35px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
